@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-
+import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 
 const DetailPage = () => {
   const { id } = useParams();
@@ -30,12 +29,12 @@ const DetailPage = () => {
   if (!user) return <p className="text-white text-center">User not found</p>;
 
   return (
-    <div className="min-h-screen bg-black text-white p-6">
+    <div className="min-h-screen w-full bg-black text-white p-6 overflow-hidden">
       <div className="">
           {/* Back link at the top */}
         <Link to="/main" className="w-xl max-w-3xl flex items-center mb-4 text-white/70 hover:text-white transition-colors ">
-          <ArrowBackIosNewIcon className="mr-1 text-sm" />
-          Back
+          <ArrowBackOutlinedIcon className="mr-1 text-sm" />
+           Home
         </Link>
         <div className="space-y-5 w-full  sm:w-xl max-w-3xl mx-auto bg-[rgba(0,0,0,0.5)] py-4 rounded-2xl border border-[rgba(255,255,255,0.2)] shadow-md">
           <div className="flex flex-col items-center gap-4 px-4">
