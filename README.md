@@ -6,7 +6,7 @@ This is a simple React web application demonstrating functional components, Hook
 ## Features
 1. **Login Page**
    - Phone number input with validation
-   - Mock login logic (accepts +254712345678)
+   - Mock login logic (accepts +254712345678 and any other valid country number)
    - Error messages for invalid input
    - Persists login using localStorage
 
