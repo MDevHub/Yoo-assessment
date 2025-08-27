@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "react-phone-input-2/lib/style.css";
+
+
+/* custom-phone.css */
+/* ===== react-phone-input-2 dark hover/focus overrides ===== */
+
+/* Input hover + focus border */
+.rp-container .rp-control:hover,
+.rp-container .rp-control:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: none !important;
+}
+
+/* The visible flag button is the inner .selected-flag */
+.rp-container .rp-flag-btn .selected-flag {
+  background: rgba(0,0,0,0.6) !important;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Hover + open states for the flag button */
+.rp-container .rp-flag-btn:hover .selected-flag,
+.rp-container .rp-flag-btn.open .selected-flag {
+  background: rgba(0,0,0,0.8) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Dropdown list base (keeps your black theme) */
+.rp-dropdown {
+  background: rgba(0,0,0,0.97) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px !important;
+}
+.rp-dropdown::-webkit-scrollbar {
+  display: none;
+}
+/* For Firefox */
+.rp-dropdown {
+  scrollbar-width: none; /* hides scrollbar */
+}
+
+/* Hover + keyboard highlight on country rows */
+.rp-dropdown .country:hover,
+.rp-dropdown .country.highlight {
+  background: rgba(255,255,255,0.1) !important;
+  color: #fff !important;
+}
+
+/* Dark search box inside dropdown */
+.rp-dropdown .search {
+  background: rgba(0,0,0,0.7) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Optional: remove default blue outline on focus if you want */
+.rp-container .rp-control:focus,
+.rp-container .rp-flag-btn .selected-flag:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
